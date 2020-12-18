@@ -1,2 +1,2 @@
-# rnSample2
+# rnSample1
 Created with CodeSandbox
