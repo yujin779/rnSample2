@@ -6,18 +6,18 @@ import styles from "./styles";
 
 const Box = (props) => {
   // hooks
-  const mesh = useRef();
+  const mesh2 = useRef();
   // [変数名,変数を変更する関数名] = useState(初期値);
   const [hovered, setHover] = useState(false);
   const [active, setActive] = useState(false);
   // 回転させる
   useFrame(() => {
-    mesh.current.rotation.x = mesh.current.rotation.y += 0.01;
+    mesh2.current.rotation.x = mesh2.current.rotation.y += 0.01;
   });
   return (
     <mesh
       {...props}
-      ref={mesh}
+      ref={mesh2}
       scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
       onClick={(e) => setActive(!active)}
       onPointerOver={(e) => setHover(true)}
